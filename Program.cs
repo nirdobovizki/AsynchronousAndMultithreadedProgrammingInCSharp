@@ -17,6 +17,19 @@ var demos = new List<(string name,List<(string name, Action demo)> demos)>
         ("Listing 3.2 reading BMP width, async version", ShowResult(()=>new Chapter03.AsyncDemo2().GetBitmapWidth("sample.bmp").Result)),
         ("Compiler transformation of listing 3.2", ()=>new Chapter03.AsyncDemo3().GetBitmapWidth("sample.bmp",i=>Console.WriteLine(i),ex=>Console.WriteLine(ex.ToString()))),
     }),
+    ("Chapter 4", new(){
+        ("Listing 4.1 Creating a thread", Delay(()=>new Chapter04.Listing1().RunInBackground())),
+        ("Listing 4.2 Creating a thread with a parameter", Delay(()=>new Chapter04.Listing2().RunLotsOfThreads())),
+        ("Listing 4.3 Wait for threads to finish", ()=>new Chapter04.Listing3().RunAndWait()),
+        ("Listing 4.4 Running in the thread pool", Delay(()=>new Chapter04.Listing4().RunInBackground())),
+        ("Listing 4.5 Running in the thread pool with a parameter", Delay(()=>new Chapter04.Listing5().RunInBackground())),
+        ("Listing 4.6 Running in the thread pool with Task.Run", Delay(()=>new Chapter04.Listing6().RunInBackground())),
+        ("Listing 4.7 Running async code with Task.Run", Delay(()=>new Chapter04.Listing7().RunInBackground())),
+        ("Listing 4.8 Waiting for tasks to finish with Task.Run", ()=>new Chapter04.Listing8().RunInBackground().Wait()),
+        ("Listing 4.9 Use lambdas to create a parametrized Task.Run", Delay(()=>new Chapter04.Listing9().RunInBackground())),
+        ("Listing 4.10 Incorrect value when accessing shared data without locking", ()=>new Chapter04.Listing10().GetIncorrectValue()),
+        ("Listing 4.11 Adding locks to avoid simultaneous access problems", ()=>new Chapter04.Listing11().GetCorrectValue()),
+    }),
 };
 
 while (true)
@@ -64,6 +77,16 @@ Action ForeverDemo(Action action)
         if(Console.ReadKey().Key == ConsoleKey.X) Environment.Exit(0);
     };
 }
+
+Action Delay(Action action)
+{
+    return () =>
+    {
+        action();
+        System.Threading.Thread.Sleep(1000);
+    };
+}
+
 
 Action ShowResult<T>(Func<T> action)
 {
