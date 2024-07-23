@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+#nullable disable // disable null warning because this simulate compiler genrated code
+
 namespace Chapter03
 {
 

@@ -30,6 +30,17 @@ var demos = new List<(string name,List<(string name, Action demo)> demos)>
         ("Listing 4.10 Incorrect value when accessing shared data without locking", ()=>new Chapter04.Listing10().GetIncorrectValue()),
         ("Listing 4.11 Adding locks to avoid simultaneous access problems", ()=>new Chapter04.Listing11().GetCorrectValue()),
     }),
+    ("Chapter 5", new(){
+        ("Listing 5.1 Read 10 files", ()=>new Chapter05.Listing1().Read10Files()),
+        ("Listing 5.2 Calculate 10 values", ()=>new Chapter05.Listing2().Compute10Values()),
+        ("Listing 5.2 Read 10 files using multithreading", ()=>new Chapter05.Listing3().Read10Files()),
+        ("Listing 5.4 Read 10 files and do something with the data", ()=>new Chapter05.Listing4().Process10Files()),
+        ("Listing 5.5 Read 10 files asynchronously and do something with the data", ()=>new Chapter05.Listing5().Process10Files()),
+		("Listing 5.6 Make the caller async too", ()=>new Chapter05.Listing6().Process10Files().Wait()),
+		("Listing 5.7 Getting a value from a server with caching, not thread-safe", ()=>new Chapter05.Listing7().GetResult("abc").Wait()),
+		("Listing 5.8 Calling GetResult from a thread created by the Thread class", ()=>new Chapter05.Listing8().Method()),
+		("Listing 5.10 Releasing the lock while awaiting", ()=>new Chapter05.Listing10().GetResult("abc").Wait()),
+}),
 };
 
 while (true)
@@ -92,7 +103,7 @@ Action ShowResult<T>(Func<T> action)
 {
     return () =>
     {
-        Console.WriteLine(action().ToString());
+        Console.WriteLine(action()?.ToString());
     };
 
 }
