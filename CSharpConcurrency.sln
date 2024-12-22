@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSamples", "CodeSamples\CodeSamples.csproj", "{2AEF4884-ED18-43D6-B083-7F110B52C88D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CDCE5C8-2DFF-4859-BC12-E75AC1C0D2EC}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadTestClientAsync", "LoadTestClientAsync\LoadTestClientAsync.csproj", "{62A93451-A9CF-43F0-B01D-AFE1FEB03381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadTestServerOneRequestPerThread", "LoadTestServerOneRequestPerThread\LoadTestServerOneRequestPerThread.csproj", "{FFE3B21A-1B0C-4E5D-9250-45573C15826C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadTestServerAsync", "LoadTestServerAsync\LoadTestServerAsync.csproj", "{BD19B4AC-8F94-4EF7-BD5D-5F237C78B5C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NirDobovizki.CSharpConcurrency", "NirDobovizki.CSharpConcurrency\NirDobovizki.CSharpConcurrency.csproj", "{8329EBEA-4EC9-41B8-BB7F-E6D767B3C030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AEF4884-ED18-43D6-B083-7F110B52C88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEF4884-ED18-43D6-B083-7F110B52C88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEF4884-ED18-43D6-B083-7F110B52C88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEF4884-ED18-43D6-B083-7F110B52C88D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62A93451-A9CF-43F0-B01D-AFE1FEB03381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62A93451-A9CF-43F0-B01D-AFE1FEB03381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62A93451-A9CF-43F0-B01D-AFE1FEB03381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62A93451-A9CF-43F0-B01D-AFE1FEB03381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE3B21A-1B0C-4E5D-9250-45573C15826C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE3B21A-1B0C-4E5D-9250-45573C15826C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE3B21A-1B0C-4E5D-9250-45573C15826C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE3B21A-1B0C-4E5D-9250-45573C15826C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD19B4AC-8F94-4EF7-BD5D-5F237C78B5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD19B4AC-8F94-4EF7-BD5D-5F237C78B5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD19B4AC-8F94-4EF7-BD5D-5F237C78B5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD19B4AC-8F94-4EF7-BD5D-5F237C78B5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8329EBEA-4EC9-41B8-BB7F-E6D767B3C030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8329EBEA-4EC9-41B8-BB7F-E6D767B3C030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8329EBEA-4EC9-41B8-BB7F-E6D767B3C030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8329EBEA-4EC9-41B8-BB7F-E6D767B3C030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D36CD4E9-C474-4AC2-AA65-9DF82A438C02}
+	EndGlobalSection
+EndGlobal

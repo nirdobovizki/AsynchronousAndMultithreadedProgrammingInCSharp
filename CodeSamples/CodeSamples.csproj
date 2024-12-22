@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+<!--	  <TargetFramework>net6.0-windows</TargetFramework>
+	  <UseWindowsForms>true</UseWindowsForms>-->
+	  <OutputType>Exe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+	    <DefineConstants>WINDOWS</DefineConstants>
+    </PropertyGroup>
+	<PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
+	   <TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup> 
+
+	<ItemGroup>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup> 
+
+	<ItemGroup>
+	  <ProjectReference Include="..\NirDobovizki.CSharpConcurrency\NirDobovizki.CSharpConcurrency.csproj" />
+	</ItemGroup> 
+
+	<ItemGroup>
+	  <Compile Update="Chapter11\Listing17.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Chapter11\Listing20.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Chapter11\Listing21.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Chapter11\Listing19.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Chapter11\Listing18.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Chapter11\Listing16.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="Chapter11\Listing15.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	</ItemGroup>
+
+  <ItemGroup>
+    <None Update="2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="5.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="6.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="7.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="8.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="9.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="0.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Numbers.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="sample.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

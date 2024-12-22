@@ -25,7 +25,7 @@ namespace Chapter05
 			if (_cache.TryGetValue(query, out var cacheResult))
 				return cacheResult;
 			var http = new HttpClient();
-			var result = await http.GetStringAsync("https://example.com?" + query);
+			var result = await http.GetStringAsync("https://green-sand-036ea9c1e.4.azurestaticapps.net/?" + query);
 			_cache[query] = result;
 			return result;
 		}

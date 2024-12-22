@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Chapter05\Listing11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter05\Listing12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter05\Listing13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter11\Listing01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter11\Listing02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter11\Listing03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter11\Listing11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter11\Listing12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter11\Listing13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Chapter11\Listing14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
